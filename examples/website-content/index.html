@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Static Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 2rem;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .feature {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .feature h3 {
+            color: #333;
+            margin: 0 0 0.5rem 0;
+        }
+        .feature p {
+            color: #666;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        .status {
+            background: #d4edda;
+            color: #155724;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 AWS Static Website</h1>
+        <p>Successfully deployed using Terraform with S3, CloudFront, Route 53, and ACM!</p>
+        
+        <div class="status">
+            ✅ Website is live and serving content via CloudFront CDN
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>🌐 S3 Hosting</h3>
+                <p>Secure static website hosting with encryption and versioning</p>
+            </div>
+            <div class="feature">
+                <h3>⚡ CloudFront CDN</h3>
+                <p>Global content delivery for improved performance</p>
+            </div>
+            <div class="feature">
+                <h3>🔒 SSL Certificate</h3>
+                <p>Free ACM certificate with automatic validation</p>
+            </div>
+            <div class="feature">
+                <h3>📡 Route 53 DNS</h3>
+                <p>Reliable DNS management with custom domain support</p>
+            </div>
+        </div>
+
+        <p><strong>Infrastructure as Code</strong> - This website was deployed using Terraform, demonstrating best practices for AWS static website hosting.</p>
+    </div>
+</body>
+</html> 
